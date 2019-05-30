@@ -49,7 +49,7 @@
 		
 		
 		/* Example of building on top of the library */
-		function inactivate(elem){
+		function deactivate(elem){
 			elem.classList.remove('active');
 		}
 		
@@ -62,7 +62,7 @@
 		}	
 		
 		function addActive(e){
-			document.querySelectorAll('.bm-grid-block.active').forEach(inactivate);
+			document.querySelectorAll('.bm-grid-block.active').forEach(deactivate);
 			e.target.classList.add('active');
 			document.querySelectorAll('.bm-grid-block:not(.active)').forEach(muteElem);
 		}
